@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+    <title>Emily's recipe page</title>
+</head>
+
+<body>
+    <div id="homeContainer">
+        <nav>
+            <h1 class="logo" ><b>Chef melly...</b></h1>
+
+
+            <ul>
+                <li>
+                    <a href="#homeContainer">Home</a>
+                </li>
+                <li>
+                    <a href="#recipeContainer">Recipe</a>
+                </li>
+                <li onclick="displayAllOderList()">
+                    <a href="#orderContainer">Order</a>
+                </li>
+                
+
+
+            </ul>
+        </nav>
+        <div class="homeWrapper">
+            <div class="homeImage">
+            </div>
+            <div class="homeInfo">
+                <div class="homeHeader">
+                    <h2 class="header">Delicous food</h2>
+                </div>
+                <div class="reciepeMessage">
+                    <p class="reciepeMessageHeader"><b>🌟 Introducing Flavor Fusion: Elevate Your Culinary Creations!
+                            🌟</b>
+                    </p>
+                    <p>Are you ready to take your cooking to the next level? Look no further than Flavor Fusion, your
+                        ultimate
+                        recipe companion for extraordinary meals!</p>
+
+                    <p>Our curated collection of recipes will tantalize your senses and transport you to a world of
+                        exquisite
+                        flavors. From sizzling stir-fries to delectable desserts, we have the perfect recipe for every
+                        occasion.
+                    </p>
+                    <p>Elevate your cooking skills with our step-by-step instructions and pro tips. Whether you're a
+                        kitchen
+                        novice or an experienced cook, our recipes will empower you to create dishes that rival those of
+                        top
+                        chefs.</p>
+                    <p>Immerse yourself in a feast for the eyes as well as the taste buds. Our stunning food photography
+                        will
+                        inspire your culinary creativity and make your dishes Instagram-worthy. Prepare to wow your
+                        friends
+                        and
+                        family with picture-perfect plates!</p>
+                </div>
+                <div class="mealActionButtons">
+                    <h2>Order Here...</h2>
+                    <button class="btn btn-warning">
+                        <a id="breakfast" href="#orderContainer" value="Breakfast">Breakfast</a>
+                    </button>
+                    <button class="btn btn-warning">
+                        <a id="lunch" href="#orderContainer" value="Lunch">Lunch</a>
+                    </button>
+                    <button class="btn btn-warning"><a id="dinner" href="#orderContainer" value="Dinner">
+                            Dinner</a></button>
+
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+    <div id="recipeContainer">
+        <h2></h2>
+        <h1 class="recipeContainerTitle">Recipe</h1>
+        <!-- <div class="display"></div> -->
+        <div class="cardContainer">
+        <div class="card">
+            <div class="ingridientTitle">
+                <h3 class="title">Watermelon berry salad</h3>
+                <h4 class="slogan">When one has tasted watermelon he knows what angles eat.</h4>
+            </div>
+
+            <div class="ingridientAndImage">
+                <div class="ingridients">
+                    <div class="ingridientsList" id="ingridientsList">
+                        <h4>Ingredients</h4>
+                        <ul>
+                            <li> 1 cups of cubed watermelon  </li>
+                            <li>1/2 cup sliced strawberries</li>
+                            <li>1/2 cup rasperries</li>
+                            <li>1/2 cup blueberries</li>
+                            <li>1/2 cup blackberries</li>
+
+                        </ul>
+                        <div class="directionsActionButton">
+                            <input class="btn btn-outline-info" onclick="handleDirectionChange()" type="button" value="Directions">
+                        </div>
+                    </div>
+                    <div class="directionsList" id="directionsList">
+                        <h4>Directions</h4>
+                        <ul>
+                            <li>Combine fruits in a large bowl</li>
+                            <li>Dollop the salad with the cottage chess and sprinkle with fresh mint</li>
+                            <li>serving dish and enjoy!</li>
+
+                        </ul>
+                        <div class="ingridientsActionButton">
+                            <input class="btn btn-outline-info" onclick="handleIngridientChange()" type="button" value="Ingridients">
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                <div class="image">
+                    <img class="ingridientImage"
+                        src="https://i.pinimg.com/236x/07/82/51/078251ab7d2f673f38cb5732efd3bb62.jpg"
+                        alt="">
+                </div>
+            </div>
+            
+        </div>
+        <div class="card">
+            <div class="ingridientTitle">
+                <h3 class="title">Red velvet cake</h3>
+                <h4 class="slogan"> I’ll never forget my first bite of red velvet cake. It was love at first taste!</h4>
+            </div>
+
+            <div class="ingridientAndImage">
+                <div class="ingridients">
+                    <div class="ingridientsList" id="ingridientscake">
+                        <h4>Ingredients</h4>
+                        <ul>
+                            <li> 8 Ounce red food coloring </li>
+                            <li>1/2 Cup butter</li>
+                            <li>16 Ounces confectioners sugar </li>
+                            <li>1 Teaspoon vanilla Extract </li>
+
+                        </ul>
+                        <div class="directionsActionButton">
+                            <input class="btn btn-outline-info" onclick="handleDCakeChange()" type="button" value="Directions">
+                        </div>
+                    </div>
+                    <div class="directionsList" id="directionscake">
+                        <h4>Directions</h4>
+                        <ul>
+                            <li>Blend the butter, cream cheese and vanilla.</li>
+                            <li>Slowly add the confectioners sugar until smooth and creamy.</li>
+                            <li>Assemble the cake by piping the icing on top of a layer in small circles that are about 1 inch in diameter each.</li>
+                        </ul>
+                        <div class="ingridientsActionButton">
+                            <input class="btn btn-outline-info" onclick="handleICakeChange()" type="button" value="Ingridients">
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                <div class="image">
+                    <img class="ingridientImage"
+                        src="https://whereiscake.com/media/eidoz34k/ta_samayia-09032022-1.jpg?width=800&mode=crop&bgcolor=ffffff"
+ alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="orderContainer">
+        <h1 style="text-align: center;" class="orderContainerTitle">Order</h1>
+        <br>
+        <div id="orderName"></div>
+        <br>
+        <div id="orderContainerbox">
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirm order</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="">Name</label>
+                            <input type="text" class="form-control" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Price</label>
+                            <input type="text" class="form-control" placeholder="Enter your price">
+                        </div>
+                       
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="upArrow">
+        <button class="btn btn-outline-dark">
+            <a href="#">Up</a>
+        </button>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="./orderHereActionButtons.js"></script>
+    <script src="./recipe.js"></script>
+
+
+</body>
+
+</html>

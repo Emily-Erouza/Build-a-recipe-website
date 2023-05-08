@@ -1,0 +1,226 @@
+.html {
+  /* overflow-y: hidden; */
+color: white;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* color: white; */
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color: rgba(201, 76, 76, 0.3);
+  margin-bottom: auto;
+}
+
+.logo {
+  margin-inline: 1rem;
+font-size :20px;
+font-family:italic ;
+/* height: 1px;
+width: 2px; */
+}
+
+
+nav ul {
+  display: flex;
+  /* color:white ; */
+}
+nav ul li {
+  list-style: none;
+  margin-inline: 26px;
+  margin-top: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+ul li a:hover {
+  cursor: pointer;
+  color: rgb(134, 14, 96);
+}
+
+#homeContainer {
+  height: 100vh;
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ZhRv9iHvfXVuaDp9NZnkBmTiFd6cCz672A&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  position: relative;
+}
+
+.homeWrapper {
+  position: absolute;
+  top: 6.5rem;
+  left: 3rem;
+  right: 3rem;
+  /* margin-top: 5rem; */
+  display: grid;
+  grid-template-columns: 35% 65%;
+  /* margin: auto; */
+  /* width: 95%; */
+  height: 85vh;
+}
+
+.homeImage {
+  background-image: url("https://poosh.com/app/uploads/2023/03/Hormone-Healthy-Raw-Carrot-Salad-Recipe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homeInfo {
+  background-color: rgba(255, 140, 0, 0.408);
+  position: relative;
+}
+.header {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.mealActionButtons {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.mealActionButtons a {
+  text-decoration: none;
+}
+
+.reciepeMessage {
+  background-color: white;
+  box-shadow: 0px 5px 17px -3px rgb(0, 0, 0);
+  border-radius: 20px;
+  margin-top: 3rem;
+  position: absolute;
+  left: 5rem;
+  right: 5rem;
+  padding: 2rem;
+}
+
+.reciepeMessageHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+
+}
+.reciepeMessage p {
+  /* text-align: center; */
+  font-family: "Work Sans", sans-serif;
+  font-style: italic;
+}
+
+#recipeContainer {
+  height: 100vh;
+  background-image: url();
+
+}
+
+#recipeContainer .card {
+  width: 50%;
+  padding: 2rem;
+  margin-left: 2rem;
+  margin-top: 3rem;
+color: rgb(49, 18, 2);
+}
+
+.ingridientTitle {
+  border-bottom: 1px solid grey;
+}
+
+.ingridientAndImage {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.image {
+  width: 100%;
+}
+
+.ingridients {
+  position: relative;
+color: black;
+}
+
+/* .recipeWrapper{
+  display: grid;
+  grid-template-columns: auto a;
+} */
+
+.ingridientImage {
+  width: 20rem;
+  height: 20rem;
+  margin-top: 3rem;
+  border-radius: 50%;
+  margin-left: 3rem;
+
+}
+
+.ingridientsList {
+  display: block;
+  position: absolute;
+  left: 2rem;
+  right: 2rem;
+  top: 4rem;
+  bottom: 1rem;
+  box-shadow: 0px 5px 17px -3px rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+
+/* .ingridientsList ul li {
+} */
+
+.directionsList {
+  display: none;
+  position: absolute;
+  left: 2rem;
+  right: 2rem;
+  top: 4rem;
+  bottom: 1rem;
+  box-shadow: 0px 5px 17px -3px rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+
+/* .directionsList ul li {
+} */
+
+.directionsActionButton {
+  position: absolute;
+  bottom: 1.5rem;
+}
+
+.ingridientsActionButton {
+  position: absolute;
+  bottom: 1.5rem;
+}
+
+
+.recipeContainerTitle {
+  text-align: center;
+  /* margin-top: 3rem; */
+color:rgb(195, 137, 66);
+}
+
+#orderContainer {
+  height: 100vh;
+color:rgb(195, 137, 66);
+}
+
+#orderContainerbox {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 2rem;
+
+
+}
+
+#orderContainerbox
+
+
+.orderContainerTitle {
+  text-align: center;
+
+}
